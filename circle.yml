@@ -1,2 +1,5 @@
 machine:
     timezone: Asia/Tokyo
+    ruby:
+        version:
+            2.3.0p0
