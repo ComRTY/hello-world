@@ -3,3 +3,10 @@ machine:
     ruby:
         version:
             2.3.0p0
+test:
+  pre: 
+    - echo "-----start test-----"
+  override:    
+    - echo "-----test-----" 
+  post: 
+    - echo "-----end test-----"
