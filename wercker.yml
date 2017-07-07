@@ -45,6 +45,9 @@ build:
 #          go test ./...
 
   after-steps:
+    - install-packages:
+        packages: ruby
+#You need to use a box that installed ruby.
     - wantedly/pretty-slack-notify:
         team: Group name 111
         webhook_url: $SLACK_WEBHOOK_URL
