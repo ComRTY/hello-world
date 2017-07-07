@@ -44,3 +44,9 @@ build:
 #        code: |
 #          go test ./...
 
+  after-steps:
+    - wantedly/pretty-slack-notify:
+        team: Group name 111
+        token: $SLACK_WEBHOOK_URL
+        channel: general
+
